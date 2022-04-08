@@ -1,0 +1,19 @@
+.Header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.Button {
+  background: linear-gradient(to right, #7191c0, #fac4a2, #a1e5d6);
+  color: #182026;
+  font-family: 'Libre Franklin', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  border: none;
+  max-width: 200px;
+  margin: 10px 10px 10px 0;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}

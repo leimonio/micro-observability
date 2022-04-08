@@ -1,0 +1,92 @@
+.Profile {
+    color: #ffffff;
+}
+.ProfileHeader {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.ProfileContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ButtonsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Character {
+    display: flex;
+    font-family: 'Libre Franklin', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.Character img {
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.CharacterInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.CharacterInfo p {
+    margin: 0 0 14px;
+}
+
+.CharacterInfo p span {
+    color: #a1e5d6;
+    font-weight: bold;
+}
+
+.Button {
+    background: linear-gradient(to right, #7191c0, #fac4a2, #a1e5d6);
+    color: #182026;
+    font-family: 'Libre Franklin', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    border: none;
+    max-width: 200px;
+    margin: 10px 10px 10px 0;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.Button:disabled,
+.Button[disabled] {
+    opacity: 0.6;
+}
+
+.Loader {
+    display: inline-block;
+    height: 30px;
+    font-size: 30px;
+    pointer-events: none;
+    margin: 0 0 0 20px;
+    -webkit-animation: loader-spin 1s infinite linear;
+    -moz-animation: loader-spin 1s infinite linear;
+    -o-animation: loader-spin 1s infinite linear;
+    animation: loader-spin 1s infinite linear;
+}
+
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

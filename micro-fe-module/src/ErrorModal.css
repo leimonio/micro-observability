@@ -1,0 +1,41 @@
+.modal-root {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #182026cc;
+    overflow: hidden;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+.Modal {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #182026;
+    border: 2px solid #a1e5d6;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Modal p {
+    color: white;
+}
+
+.Modal button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

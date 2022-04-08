@@ -1,0 +1,122 @@
+html, body {
+  padding: 0;
+}
+
+body {
+  background-color: #182026;
+  font-family: 'Libre Franklin';
+}
+
+.AppHeader {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.AppHeader button {
+  background: linear-gradient(to right, #7191c0, #fac4a2, #a1e5d6);
+  color: #182026;
+  font-family: 'Libre Franklin', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  border: none;
+  max-width: 200px;
+  margin: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  height: auto;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 900;
+  background: linear-gradient(to right bottom, #7191c0, #fac4a2, #fff393, #a1e5d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Libre Franklin';
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 800;
+  background: linear-gradient(to right bottom, #fac4a2, #fff393, #a1e5d6, #7191c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Libre Franklin';
+  margin: 0;
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(to right bottom, #fff393, #a1e5d6, #7191c0, #fac4a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Libre Franklin';
+  margin: 0;
+}
+
+.HeaderContainer {
+  border: 2px solid #a1e5d6;
+  border-radius: 5px;
+  margin: 0 0 30px;
+  padding: 20px 20px 10px 20px;
+  position: relative;
+}
+
+.HeaderContainer::before {
+  content: 'Header';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a1e5d6;
+  color: #182026;
+  height: 14px;
+  font-size: 12px;
+  padding: 0 0 0 20px;
+}
+
+.ProfileContainer {
+  border: 2px solid #fac4a2;
+  border-radius: 5px;
+  margin: 0 0 30px;
+  padding: 20px 20px 10px 20px;
+  position: relative;
+}
+
+.ProfileContainer::before {
+  content: 'Profile';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fac4a2;
+  color: #182026;
+  height: 14px;
+  font-size: 12px;
+  padding: 0 0 0 20px;
+}
+
+.FooterContainer {
+  border: 2px solid #7191c0;
+  border-radius: 5px;
+  padding: 20px 20px 10px 20px;
+  position: relative;
+}
+
+.FooterContainer::before {
+  content: 'Footer';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #7191c0;
+  color: #182026;
+  height: 14px;
+  font-size: 12px;
+  padding: 0 0 0 20px;
+}
