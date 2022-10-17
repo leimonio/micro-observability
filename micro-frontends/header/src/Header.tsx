@@ -13,8 +13,8 @@ function Header() {
         <HeaderContainer>
             <Title>Menu v{details.version}</Title>
             <div>
-            <Button onClick={() => setDetails(null)}>Component Error</Button>
-            <Button onClick={() => setIsModalDisplayed(true)}>Modal Error</Button>
+              <Button onClick={() => setDetails(null)}>Component Error</Button>
+              <Button onClick={() => setIsModalDisplayed(true)}>Modal Error</Button>
             </div>
             <ErrorModal 
                 isOpen={isModalDisplayed}

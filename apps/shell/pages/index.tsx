@@ -30,13 +30,13 @@ const Home = () => {
         </Header>
         <div>
           <HeaderContainer>
-            <Host app={{ packageName: "@micro-observability/header" }} />
+            <Host app={{ packageName: "@micro-observability/header" }} errorComponent={null} />
           </HeaderContainer>
           <ProfileContainer>
-            <Host app={{ packageName: "@micro-observability/profile" }} />
+            <Host app={{ packageName: "@micro-observability/profile" }} errorComponent={null} />
           </ProfileContainer>
           <FooterContainer>
-            <Host app={{ packageName: "@micro-observability/footer" }} />
+            <Host app={{ packageName: "@micro-observability/footer" }} errorComponent={null} />
           </FooterContainer>
         </div>
         <ErrorModal 
