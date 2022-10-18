@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../Button/Button';
 import { ErrorBoundaryContainer, Title } from './ErrorBoundaryStyles';
-import { trackError } from '@micro-observability/utils';
+import { getUserId, trackError } from '@micro-observability/utils';
 
 
 type ErrorBoundaryProps = {
@@ -31,6 +31,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
       packageVersion: this.props.packageVersion,
       componentSource: this.props.name,
       errorType: 'ErrorBoundary',
+      userId: getUserId(),
     })
   }
 

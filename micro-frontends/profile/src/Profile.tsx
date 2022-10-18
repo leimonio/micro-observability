@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { ErrorModal, ErrorBoundary, Button } from '@micro-observability/ui';
-import { trackError, trackAction } from '@micro-observability/utils';
+import { trackError, trackAction, getUserId } from '@micro-observability/utils';
 import {
 	ProfileContainer,
 	ProfileHeader,
@@ -46,8 +46,9 @@ const Profile = () => {
 			trackError(error, {
 				moduleName: packageJson.name,
 				moduleVersion: packageJson.version,
-				errorType: 'AsyncError',
 				componentSource: 'Profile',
+				errorType: 'AsyncError',
+				userId: getUserId(),
 			})
 			throw new Error(error);
 		});
