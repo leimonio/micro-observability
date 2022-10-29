@@ -2,9 +2,9 @@
 
 ![](./screenshot.png)
 
-## 2 projects
+## Strucutre
 
-- `apps/shell` - a NextJS application, the host of the micro-frontend modules
+- `apps/shell` - a NextJS application, the application shell of the micro-frontend hosted applications
 - `micro-frontends` - the micro-frontend composable applications
 - `packages` - shared functionality for shell & micro-frontend applications
 
